@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+require('dotenv').config(); 
 // Connect to MongoDB
 const db = require("./db.js");
 
@@ -24,8 +24,8 @@ app.get("/chicken", (req, res) => {
 const personRoutes=require('./personRoutes.js'); 
 app.use('/person',personRoutes); 
 
-// Start server
-const PORT = 3000;
+//start server prot come from env file otherwise use default 3000
+const PORT=process.env.PORT || 3000 ;
 app.listen(PORT, () => {
   console.log(`✅ Server is listening on port ${PORT}`);
 });
