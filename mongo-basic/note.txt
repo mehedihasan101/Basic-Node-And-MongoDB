@@ -1,0 +1,10 @@
+mongoDB atlast
+mongoDB Compass
+
+what is databse cluster ()
+
+#method
+1.deleteOne(); ekta data delete korbe database theke
+2.deleteMany(); many data delete korbe
+3.findAll() all data show korbe
+4.findOne() only one data show korbe
