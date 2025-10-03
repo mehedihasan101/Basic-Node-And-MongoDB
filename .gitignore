@@ -1,2 +1,4 @@
 #ignore node module directory
 node_modules/
+
+#ignore the .env confidential part
